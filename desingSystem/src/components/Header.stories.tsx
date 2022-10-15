@@ -1,9 +1,10 @@
 import {Meta, StoryObj} from '@storybook/react'
-import { Text, TextProps } from "./Text";
+import { Header } from './Header';
+import { TextProps } from "./Text";
 
 export default {
-  title: 'components/Text',
-  component: Text,
+  title: 'components/Header',
+  component: Header,
   args: {
     children: 'Matheus',
     size: 'md'
@@ -34,7 +35,7 @@ export const Large : StoryObj<TextProps> = {
   args: {
     asChild: true,
     children: (
-      <p>teste</p>
+      <h2>teste</h2>
     )
   },
   argTypes:{
